@@ -77,7 +77,7 @@ def build_db():
             line["prepsn"],
             line["nompsn"])
         print(line["codeinsee"])
-        print(scrap)
+        #print(scrap)
         new_mayor = Mairies(
             insee_code=line["codeinsee"],
             postal_code=get[0],
@@ -164,6 +164,6 @@ def scrap_party_date(postal_code, city, first_name, last_name):
 
 Base.metadata.create_all(engine)
 
-print(scrap_party_date('01182','Groslée','Marthe','AUREL'))
-#build_db()
-#write_csv()
+#print(scrap_party_date('01182','Groslée','Marthe','AUREL'))
+build_db()
+write_csv()
