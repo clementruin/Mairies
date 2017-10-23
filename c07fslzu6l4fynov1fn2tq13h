@@ -1,0 +1,1996 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small,
+strong, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+body {
+    line-height: 1
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section, main {
+    display: block
+}
+
+nav ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold
+}
+
+del {
+    text-decoration: line-through
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+hr {
+    border: 0;
+    display: block;
+    height: 1px;
+    margin: 1rem 0 24px 0;
+    padding: 0;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(0, 0, 0, 0.15)
+}
+
+@media (max-width: 976px) {
+    hr {
+        margin-bottom: 16px
+    }
+}
+
+input, select {
+    vertical-align: middle
+}
+
+#svg-source {
+    position: absolute;
+    top: 0;
+    left: -100px;
+    opacity: 0
+}
+
+.a11y-text {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    overflow: hidden;
+    padding: 0 !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    width: 1px !important
+}
+
+[data-artdeco-is-focused="true"] {
+    outline: none
+}
+
+@-webkit-keyframes nodeInserted {
+    from {
+        opacity: 0.99
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes nodeInserted {
+    from {
+        opacity: 0.99
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.artdeco-link-variant p a {
+    font-weight: bold !important
+}
+
+html.artdeco {
+    -webkit-font-smoothing: antialiased
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (-webkit-min-device-pixel-ratio: 2.0833333333333335), only screen and (min-resolution: 200dpi), only screen and (min-resolution: 1.25dppx) {
+    html.artdeco {
+        -webkit-font-smoothing: subpixel-antialiased
+    }
+}
+
+html {
+    font-size: 62.5%
+}
+
+html body {
+    font-family: /* Roman */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0;
+    color: #0084bf
+}
+
+a:visited {
+    color: #827be9
+}
+
+a:visited:active {
+    color: #665ed0
+}
+
+.artdeco-link-variant a {
+    font-weight: normal;
+    color: #0073b1
+}
+
+.artdeco-link-variant a:visited {
+    color: #827be9
+}
+
+.artdeco-link-variant a:visited:active {
+    color: #665ed0
+}
+
+a:hover, a.hover, a:focus, a.focus {
+    text-decoration: underline
+}
+
+a:focus, a.focus {
+    text-decoration: underline
+}
+
+a:active, a.active {
+    text-decoration: none;
+    color: #006097
+}
+
+.artdeco-link-variant a:active, .artdeco-link-variant a.active {
+    color: #004b7c
+}
+
+strong, b {
+    font-weight: bold
+}
+
+body, p {
+    font-family: /* Roman */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 17px
+}
+
+h1, .large-header {
+    font-family: /* Roman */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI;
+    line-height: 48px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 42px
+}
+
+h2 {
+    font-family: /* Roman */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI;
+    line-height: 40px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 34px
+}
+
+h3, .large-text {
+    font-family: /* Roman */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI;
+    line-height: 32px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 26px
+}
+
+h4, .medium-text {
+    font-family: /* Roman */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI;
+    line-height: 28px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 21px
+}
+
+h5, .small-text {
+    font-family: /* Roman */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 17px
+}
+
+h6 {
+    font-family: /* Roman */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI;
+    line-height: 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 15px
+}
+
+em, i {
+    font-style: italic
+}
+
+input, select, textarea, button {
+    font-family: inherit
+}
+
+input, button, .small-text {
+    font-size: 1.45rem;
+    line-height: 1.375
+}
+
+blockquote {
+    font-family: /*  */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 17px
+}
+
+#captcha-dialog {
+    position: fixed;
+    width: 600px;
+    top: 75px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 5
+}
+
+#captcha-dialog.hide {
+    display: none
+}
+
+#captcha-dialog:before {
+    content: " ";
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10
+}
+
+#captcha-dialog .a11y-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px)
+}
+
+#captcha-dialog .title, #captcha-dialog iframe, #captcha-dialog .close {
+    position: relative;
+    z-index: 11
+}
+
+#captcha-dialog iframe {
+    width: 600px;
+    height: 410px
+}
+
+#captcha-dialog .title {
+    background: #333;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), -1px 0 0 rgba(0, 0, 0, 0.03), 1px 0 0 rgba(0, 0, 0, 0.03), 0 1px 0 rgba(0, 0, 0, 0.12);
+    padding: 8px 12px;
+    border: 1px solid #939393;
+    border-width: 1px 1px 0 1px;
+    font-size: 16px;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    color: #cccfd3
+}
+
+#captcha-dialog .close {
+    color: #fff;
+    background: transparent none;
+    padding: 0 1px 0 0;
+    border: 0;
+    margin: 0 1px 0 0;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    overflow: hidden;
+    top: 13px;
+    right: 10px;
+    width: 13px;
+    height: 13px;
+    text-indent: 14px;
+    opacity: 0;
+    top: 10px
+}
+
+#captcha-dialog .close:before {
+    font-family: "LinkedIn-Glyphs-2.0.7", "LinkedIn-Glyphs";
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    speak: none;
+    font-size: 13px;
+    color: inherit;
+    content: "\e00f";
+    vertical-align: top;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    cursor: pointer
+}
+
+input, select {
+    vertical-align: middle
+}
+
+label {
+    font-family: /* Roman */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+    display: block;
+    margin: 12px 0 3px
+}
+
+label.required:after {
+    content: '*';
+    color: #0073b1;
+    margin-left: 2px
+}
+
+textarea, input[type="date"], input[type="datetime"], input[type="datetime-local"],
+input[type="email"], input[type="month"], input[type="number"],
+input[type="password"], input[type="search"], input[type="tel"],
+input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+    box-shadow: none;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 0 10px;
+    width: 100%;
+    outline: 0;
+    height: 32px;
+    transition-property: border-color, box-shadow;
+    transition-duration: 334ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 1.5rem;
+    line-height: 2.0rem;
+    font-weight: normal
+}
+
+textarea::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder,
+input[type="datetime"]::-webkit-input-placeholder, input[type="datetime-local"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder, input[type="month"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder,
+input[type="search"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder, input[type="time"]::-webkit-input-placeholder,
+input[type="url"]::-webkit-input-placeholder, input[type="week"]::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.55);
+    opacity: 1
+}
+
+textarea::-moz-placeholder, input[type="date"]::-moz-placeholder,
+input[type="datetime"]::-moz-placeholder, input[type="datetime-local"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder, input[type="month"]::-moz-placeholder,
+input[type="number"]::-moz-placeholder, input[type="password"]::-moz-placeholder,
+input[type="search"]::-moz-placeholder, input[type="tel"]::-moz-placeholder,
+input[type="text"]::-moz-placeholder, input[type="time"]::-moz-placeholder,
+input[type="url"]::-moz-placeholder, input[type="week"]::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.55);
+    opacity: 1
+}
+
+textarea:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder,
+input[type="datetime"]:-ms-input-placeholder, input[type="datetime-local"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder, input[type="month"]:-ms-input-placeholder,
+input[type="number"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder,
+input[type="search"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder, input[type="time"]:-ms-input-placeholder,
+input[type="url"]:-ms-input-placeholder, input[type="week"]:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.55);
+    opacity: 1
+}
+
+textarea::placeholder, input[type="date"]::placeholder, input[type="datetime"]::placeholder,
+input[type="datetime-local"]::placeholder, input[type="email"]::placeholder,
+input[type="month"]::placeholder, input[type="number"]::placeholder,
+input[type="password"]::placeholder, input[type="search"]::placeholder,
+input[type="tel"]::placeholder, input[type="text"]::placeholder,
+input[type="time"]::placeholder, input[type="url"]::placeholder,
+input[type="week"]::placeholder {
+    color: rgba(0, 0, 0, 0.55);
+    opacity: 1
+}
+
+textarea:hover, input[type="date"]:hover, input[type="datetime"]:hover,
+input[type="datetime-local"]:hover, input[type="email"]:hover,
+input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover,
+input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover,
+input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover {
+    border-color: rgba(0, 0, 0, 0.55)
+}
+
+textarea:focus, input[type="date"]:focus, input[type="datetime"]:focus,
+input[type="datetime-local"]:focus, input[type="email"]:focus,
+input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus,
+input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus,
+input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus {
+    border-color: #0084bf;
+    box-shadow: 0 0 0 1px #0084bf
+}
+
+textarea[disabled], input[type="date"][disabled], input[type="datetime"][disabled],
+input[type="datetime-local"][disabled], input[type="email"][disabled],
+input[type="month"][disabled], input[type="number"][disabled],
+input[type="password"][disabled], input[type="search"][disabled],
+input[type="tel"][disabled], input[type="text"][disabled], input[type="time"][disabled],
+input[type="url"][disabled], input[type="week"][disabled] {
+    border-color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.25)
+}
+
+textarea[disabled]::-webkit-input-placeholder, input[type="date"][disabled]::-webkit-input-placeholder,
+input[type="datetime"][disabled]::-webkit-input-placeholder, input[type="datetime-local"][disabled]::-webkit-input-placeholder,
+input[type="email"][disabled]::-webkit-input-placeholder, input[type="month"][disabled]::-webkit-input-placeholder,
+input[type="number"][disabled]::-webkit-input-placeholder, input[type="password"][disabled]::-webkit-input-placeholder,
+input[type="search"][disabled]::-webkit-input-placeholder, input[type="tel"][disabled]::-webkit-input-placeholder,
+input[type="text"][disabled]::-webkit-input-placeholder, input[type="time"][disabled]::-webkit-input-placeholder,
+input[type="url"][disabled]::-webkit-input-placeholder, input[type="week"][disabled]::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.25);
+    opacity: 1
+}
+
+textarea[disabled]::-moz-placeholder, input[type="date"][disabled]::-moz-placeholder,
+input[type="datetime"][disabled]::-moz-placeholder, input[type="datetime-local"][disabled]::-moz-placeholder,
+input[type="email"][disabled]::-moz-placeholder, input[type="month"][disabled]::-moz-placeholder,
+input[type="number"][disabled]::-moz-placeholder, input[type="password"][disabled]::-moz-placeholder,
+input[type="search"][disabled]::-moz-placeholder, input[type="tel"][disabled]::-moz-placeholder,
+input[type="text"][disabled]::-moz-placeholder, input[type="time"][disabled]::-moz-placeholder,
+input[type="url"][disabled]::-moz-placeholder, input[type="week"][disabled]::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.25);
+    opacity: 1
+}
+
+textarea[disabled]:-ms-input-placeholder, input[type="date"][disabled]:-ms-input-placeholder,
+input[type="datetime"][disabled]:-ms-input-placeholder, input[type="datetime-local"][disabled]:-ms-input-placeholder,
+input[type="email"][disabled]:-ms-input-placeholder, input[type="month"][disabled]:-ms-input-placeholder,
+input[type="number"][disabled]:-ms-input-placeholder, input[type="password"][disabled]:-ms-input-placeholder,
+input[type="search"][disabled]:-ms-input-placeholder, input[type="tel"][disabled]:-ms-input-placeholder,
+input[type="text"][disabled]:-ms-input-placeholder, input[type="time"][disabled]:-ms-input-placeholder,
+input[type="url"][disabled]:-ms-input-placeholder, input[type="week"][disabled]:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.25);
+    opacity: 1
+}
+
+textarea[disabled]::placeholder, input[type="date"][disabled]::placeholder,
+input[type="datetime"][disabled]::placeholder, input[type="datetime-local"][disabled]::placeholder,
+input[type="email"][disabled]::placeholder, input[type="month"][disabled]::placeholder,
+input[type="number"][disabled]::placeholder, input[type="password"][disabled]::placeholder,
+input[type="search"][disabled]::placeholder, input[type="tel"][disabled]::placeholder,
+input[type="text"][disabled]::placeholder, input[type="time"][disabled]::placeholder,
+input[type="url"][disabled]::placeholder, input[type="week"][disabled]::placeholder {
+    color: rgba(0, 0, 0, 0.25);
+    opacity: 1
+}
+
+textarea.error, input[type="date"].error, input[type="datetime"].error,
+input[type="datetime-local"].error, input[type="email"].error,
+input[type="month"].error, input[type="number"].error, input[type="password"].error,
+input[type="search"].error, input[type="tel"].error, input[type="text"].error,
+input[type="time"].error, input[type="url"].error, input[type="week"].error {
+    border-color: #ee1620
+}
+
+@media all and (-ms-high-contrast: none) {
+    * ::-ms-backdrop, [type=range] {
+        background-image: linear-gradient(to right, transparent, transparent) !important;
+        height: 22px !important;
+        margin: -8px 0 !important
+    }
+}
+
+[type=range] {
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    height: 16px;
+    border-radius: 16px;
+    margin: 8px 0;
+    background-size: 100%, calc(16.666% + 1px) 100%, 200%;
+    background-position: top left, -1px, 36.8421%;
+    background-repeat: no-repeat, repeat-x, no-repeat;
+    -webkit-animation-duration: 0.001s;
+    animation-duration: 0.001s;
+    -webkit-animation-name: nodeInserted;
+    animation-name: nodeInserted;
+    background-image: linear-gradient(to right, #0084bf 16px, transparent 17px, transparent calc(100% - 18px), #cdcfd2 18px), linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to right, #0084bf 50%, #cdcfd2 50%)
+}
+
+[type=range][data-artdeco-slider-reverse] {
+    background-image: linear-gradient(to right, #cdcfd2 16px, transparent 17px, transparent calc(100% - 18px), #0084bf 18px), linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to right, #cdcfd2 50%, #0084bf 50%)
+}
+
+[type=range]::-webkit-slider-thumb {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+    -webkit-appearance: none;
+    margin-top: -2px
+}
+
+[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 16px;
+    border-radius: 16px;
+    background-color: transparent;
+    cursor: pointer
+}
+
+[type=range]::-moz-range-thumb {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 100
+}
+
+[type=range]::-moz-range-track {
+    width: 100%;
+    height: 16px;
+    border-radius: 16px;
+    background-color: transparent;
+    cursor: pointer
+}
+
+[type=range]::-ms-track {
+    width: 100%;
+    height: 16px;
+    border-radius: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    background: transparent;
+    border-color: transparent;
+    color: transparent
+}
+
+[type=range]::-ms-thumb {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 100
+}
+
+[type=range]::-ms-fill-lower {
+    background: #0084bf;
+    border-radius: 16px;
+    height: 16px
+}
+
+[type=range]::-ms-fill-upper {
+    background: #cdcfd2;
+    border-radius: 16px;
+    height: 16px
+}
+
+[type=range][data-artdeco-slider-reverse]::-ms-fill-lower {
+    background: #cdcfd2
+}
+
+[type=range][data-artdeco-slider-reverse]::-ms-fill-upper {
+    background: #0084bf
+}
+
+artdeco-slider {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 32px;
+    box-sizing: content-box
+}
+
+artdeco-slider input[type=range] {
+    box-sizing: content-box
+}
+
+artdeco-slider[multiple] input[type=range] {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+artdeco-slider[multiple] div.artdeco-max-slider-container {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0
+}
+
+artdeco-slider + datalist, artdeco-slider + ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    position: relative;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style: none
+}
+
+artdeco-slider + datalist option, artdeco-slider + datalist li, artdeco-slider + ul option,
+artdeco-slider + ul li {
+    font-family: /* Roman */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI;
+    line-height: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 13px;
+    text-align: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 0
+}
+
+artdeco-slider + datalist option:last-of-type, artdeco-slider + datalist li:last-of-type,
+artdeco-slider + ul option:last-of-type, artdeco-slider + ul li:last-of-type {
+    position: absolute;
+    left: 100%;
+    text-indent: -20px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    -moz-transform: translateX(15px)
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    outline: 0;
+    height: 32px;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    background-image: url(/sc/h/cn7zkcs5agi02ipu12z8d96zs);
+    background-repeat: no-repeat; /*!rtl:ignore:start*/
+    background-position: top -311px left 7px; /*!rtl:ignore:end*/
+    /*!rtl:remove:start*/
+    background-position: top -311px right 1px; /*!rtl:remove:end*/
+    box-sizing: border-box;
+    border: 0;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 0 32px 0 10px;
+    transition: box-shadow 0.15s;
+    border-radius: 1px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 1.5rem;
+    line-height: 2.0rem;
+    font-weight: normal
+}
+
+select::-ms-expand {
+    display: none
+}
+
+select:hover {
+    border-color: rgba(0, 0, 0, 0.55)
+}
+
+select:focus {
+    border-color: #0084bf;
+    box-shadow: 0 0 0 1px #0084bf
+}
+
+select[disabled] {
+    opacity: .45;
+    border-color: rgba(0, 0, 0, 0.33);
+    color: rgba(0, 0, 0, 0.33);
+    background-image: url(/sc/h/cn7zkcs5agi02ipu12z8d96zs)
+}
+
+select.error {
+    border-color: #ee1620
+}
+
+select::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.55);
+    opacity: 1
+}
+
+select::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.55);
+    opacity: 1
+}
+
+select:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.55);
+    opacity: 1
+}
+
+select::placeholder {
+    color: rgba(0, 0, 0, 0.55);
+    opacity: 1
+}
+
+textarea {
+    height: auto;
+    padding-top: 7px
+}
+
+button {
+    cursor: pointer
+}
+
+input[type=radio], input[type=checkbox] {
+    pointer-events: none;
+    opacity: 0;
+    margin: 16px 2px 0 0;
+    position: absolute
+}
+
+input[type=radio] + label, input[type=checkbox] + label {
+    display: block;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    position: relative;
+    padding-left: 28px
+}
+
+input[type=radio] + label:before, input[type=radio] + label:after,
+input[type=checkbox] + label:before, input[type=checkbox] + label:after {
+    content: " ";
+    height: 22px;
+    width: 22px;
+    top: -1px;
+    left: -1px;
+    position: absolute;
+    display: block;
+    box-sizing: border-box
+}
+
+input[type=radio] + label:before, input[type=checkbox] + label:before {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25) inset;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+    padding: 2px
+}
+
+input[type=radio]:hover + label:before, input[type=checkbox]:hover + label:before {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.55) inset
+}
+
+input[type=radio]:focus + label:before, input[type=checkbox]:focus + label:before {
+    box-shadow: 0 0 0 1px #0073b1, 0 0 0 1px rgba(0, 0, 0, 0.25) inset
+}
+
+input[type=radio]:checked + label:before, input[type=checkbox]:checked + label:before {
+    box-shadow: 0 0 0 11px #0073b1 inset
+}
+
+input[type=radio]:checked + label:after, input[type=checkbox]:checked + label:after {
+    display: block
+}
+
+input[type=radio]:focus:checked + label:before, input[type=checkbox]:focus:checked + label:before {
+    box-shadow: 0 0 0 1px #0073b1, 0 0 0 11px #0073b1 inset
+}
+
+input[type=radio]:disabled + label, input[type=checkbox]:disabled + label {
+    opacity: .35
+}
+
+input[type=radio]:disabled:checked + label:before, input[type=checkbox]:disabled:checked + label:before {
+    box-shadow: 0 0 0 11px #0073b1 inset
+}
+
+input[type=radio].small-input + label, input[type=checkbox].small-input + label {
+    line-height: 16px
+}
+
+input[type=radio].small-input + label:before, input[type=radio].small-input + label:after,
+input[type=checkbox].small-input + label:before, input[type=checkbox].small-input + label:after {
+    height: 18px;
+    width: 18px
+}
+
+input[type=radio] + label:before {
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #000, 0.25;
+    transition-property: box-shadow;
+    transition-duration: 167ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-delay: 0s
+}
+
+input[type=radio]:checked + label:before {
+    box-shadow: 0 0 0 6px #0073b1 inset, 0 0 0 11px #fff inset
+}
+
+input[type=radio]:focus:checked + label:before {
+    box-shadow: 0 0 0 1px #0073b1, 0 0 0 6px #0073b1 inset, 0 0 0 11px #fff inset
+}
+
+input[type=radio]:disabled:checked + label:before {
+    box-shadow: 0 0 0 6px #0073b1 inset, 0 0 0 11px #fff inset
+}
+
+input[type=radio].small-input:checked + label:before {
+    box-shadow: 0 0 0 5px #0073b1 inset, 0 0 0 11px #fff inset
+}
+
+input[type=radio].small-input:checked + label:after {
+    border-width: 5px
+}
+
+input[type=radio].small-input:focus:checked + label:before {
+    box-shadow: 0 0 0 1px #0073b1, 0 0 0 5px #0073b1 inset, 0 0 0 11px #fff inset
+}
+
+input[type=radio].small-input:disabled:checked + label:before {
+    box-shadow: 0 0 0 5px #0073b1 inset, 0 0 0 11px #fff inset
+}
+
+input[type=checkbox] + label:before {
+    border-radius: 4px;
+    transition-property: box-shadow;
+    transition-duration: 167ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-delay: 0s
+}
+
+input[type=checkbox] + label:after {
+    display: none;
+    height: 16px;
+    width: 16px;
+    background-image: url(/sc/h/cn7zkcs5agi02ipu12z8d96zs);
+    overflow: hidden;
+    margin: 3px
+}
+
+input[type=checkbox]:checked + label:after {
+    display: block; /*!rtl:ignore*/
+    background-position: 0 -24px
+}
+
+input[type=checkbox].small-input + label:after {
+    top: -3px;
+    left: -3px
+}
+
+form.inverse-form label {
+    color: #fff
+}
+
+form.inverse-form label.required:after {
+    color: #98d8f4
+}
+
+form.inverse-form textarea, form.inverse-form input[type="date"],
+form.inverse-form input[type="datetime"], form.inverse-form input[type="datetime-local"],
+form.inverse-form input[type="email"], form.inverse-form input[type="month"],
+form.inverse-form input[type="number"], form.inverse-form input[type="password"],
+form.inverse-form input[type="search"], form.inverse-form input[type="tel"],
+form.inverse-form input[type="text"], form.inverse-form input[type="time"],
+form.inverse-form input[type="url"], form.inverse-form input[type="week"],
+form.inverse-form select {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.7)
+}
+
+form.inverse-form textarea::-webkit-input-placeholder, form.inverse-form input[type="date"]::-webkit-input-placeholder,
+form.inverse-form input[type="datetime"]::-webkit-input-placeholder,
+form.inverse-form input[type="datetime-local"]::-webkit-input-placeholder,
+form.inverse-form input[type="email"]::-webkit-input-placeholder,
+form.inverse-form input[type="month"]::-webkit-input-placeholder,
+form.inverse-form input[type="number"]::-webkit-input-placeholder,
+form.inverse-form input[type="password"]::-webkit-input-placeholder,
+form.inverse-form input[type="search"]::-webkit-input-placeholder,
+form.inverse-form input[type="tel"]::-webkit-input-placeholder,
+form.inverse-form input[type="text"]::-webkit-input-placeholder,
+form.inverse-form input[type="time"]::-webkit-input-placeholder,
+form.inverse-form input[type="url"]::-webkit-input-placeholder,
+form.inverse-form input[type="week"]::-webkit-input-placeholder,
+form.inverse-form select::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.55);
+    opacity: 1
+}
+
+form.inverse-form textarea::-moz-placeholder, form.inverse-form input[type="date"]::-moz-placeholder,
+form.inverse-form input[type="datetime"]::-moz-placeholder, form.inverse-form input[type="datetime-local"]::-moz-placeholder,
+form.inverse-form input[type="email"]::-moz-placeholder, form.inverse-form input[type="month"]::-moz-placeholder,
+form.inverse-form input[type="number"]::-moz-placeholder, form.inverse-form input[type="password"]::-moz-placeholder,
+form.inverse-form input[type="search"]::-moz-placeholder, form.inverse-form input[type="tel"]::-moz-placeholder,
+form.inverse-form input[type="text"]::-moz-placeholder, form.inverse-form input[type="time"]::-moz-placeholder,
+form.inverse-form input[type="url"]::-moz-placeholder, form.inverse-form input[type="week"]::-moz-placeholder,
+form.inverse-form select::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.55);
+    opacity: 1
+}
+
+form.inverse-form textarea:-ms-input-placeholder, form.inverse-form input[type="date"]:-ms-input-placeholder,
+form.inverse-form input[type="datetime"]:-ms-input-placeholder,
+form.inverse-form input[type="datetime-local"]:-ms-input-placeholder,
+form.inverse-form input[type="email"]:-ms-input-placeholder, form.inverse-form input[type="month"]:-ms-input-placeholder,
+form.inverse-form input[type="number"]:-ms-input-placeholder, form.inverse-form input[type="password"]:-ms-input-placeholder,
+form.inverse-form input[type="search"]:-ms-input-placeholder, form.inverse-form input[type="tel"]:-ms-input-placeholder,
+form.inverse-form input[type="text"]:-ms-input-placeholder, form.inverse-form input[type="time"]:-ms-input-placeholder,
+form.inverse-form input[type="url"]:-ms-input-placeholder, form.inverse-form input[type="week"]:-ms-input-placeholder,
+form.inverse-form select:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.55);
+    opacity: 1
+}
+
+form.inverse-form textarea::placeholder, form.inverse-form input[type="date"]::placeholder,
+form.inverse-form input[type="datetime"]::placeholder, form.inverse-form input[type="datetime-local"]::placeholder,
+form.inverse-form input[type="email"]::placeholder, form.inverse-form input[type="month"]::placeholder,
+form.inverse-form input[type="number"]::placeholder, form.inverse-form input[type="password"]::placeholder,
+form.inverse-form input[type="search"]::placeholder, form.inverse-form input[type="tel"]::placeholder,
+form.inverse-form input[type="text"]::placeholder, form.inverse-form input[type="time"]::placeholder,
+form.inverse-form input[type="url"]::placeholder, form.inverse-form input[type="week"]::placeholder,
+form.inverse-form select::placeholder {
+    color: rgba(255, 255, 255, 0.55);
+    opacity: 1
+}
+
+form.inverse-form textarea:disabled, form.inverse-form input[type="date"]:disabled,
+form.inverse-form input[type="datetime"]:disabled, form.inverse-form input[type="datetime-local"]:disabled,
+form.inverse-form input[type="email"]:disabled, form.inverse-form input[type="month"]:disabled,
+form.inverse-form input[type="number"]:disabled, form.inverse-form input[type="password"]:disabled,
+form.inverse-form input[type="search"]:disabled, form.inverse-form input[type="tel"]:disabled,
+form.inverse-form input[type="text"]:disabled, form.inverse-form input[type="time"]:disabled,
+form.inverse-form input[type="url"]:disabled, form.inverse-form input[type="week"]:disabled,
+form.inverse-form select:disabled {
+    border-color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.25)
+}
+
+form.inverse-form textarea:disabled::-webkit-input-placeholder,
+form.inverse-form input[type="date"]:disabled::-webkit-input-placeholder,
+form.inverse-form input[type="datetime"]:disabled::-webkit-input-placeholder,
+form.inverse-form input[type="datetime-local"]:disabled::-webkit-input-placeholder,
+form.inverse-form input[type="email"]:disabled::-webkit-input-placeholder,
+form.inverse-form input[type="month"]:disabled::-webkit-input-placeholder,
+form.inverse-form input[type="number"]:disabled::-webkit-input-placeholder,
+form.inverse-form input[type="password"]:disabled::-webkit-input-placeholder,
+form.inverse-form input[type="search"]:disabled::-webkit-input-placeholder,
+form.inverse-form input[type="tel"]:disabled::-webkit-input-placeholder,
+form.inverse-form input[type="text"]:disabled::-webkit-input-placeholder,
+form.inverse-form input[type="time"]:disabled::-webkit-input-placeholder,
+form.inverse-form input[type="url"]:disabled::-webkit-input-placeholder,
+form.inverse-form input[type="week"]:disabled::-webkit-input-placeholder,
+form.inverse-form select:disabled::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.25);
+    opacity: 1
+}
+
+form.inverse-form textarea:disabled::-moz-placeholder, form.inverse-form input[type="date"]:disabled::-moz-placeholder,
+form.inverse-form input[type="datetime"]:disabled::-moz-placeholder,
+form.inverse-form input[type="datetime-local"]:disabled::-moz-placeholder,
+form.inverse-form input[type="email"]:disabled::-moz-placeholder,
+form.inverse-form input[type="month"]:disabled::-moz-placeholder,
+form.inverse-form input[type="number"]:disabled::-moz-placeholder,
+form.inverse-form input[type="password"]:disabled::-moz-placeholder,
+form.inverse-form input[type="search"]:disabled::-moz-placeholder,
+form.inverse-form input[type="tel"]:disabled::-moz-placeholder,
+form.inverse-form input[type="text"]:disabled::-moz-placeholder,
+form.inverse-form input[type="time"]:disabled::-moz-placeholder,
+form.inverse-form input[type="url"]:disabled::-moz-placeholder,
+form.inverse-form input[type="week"]:disabled::-moz-placeholder,
+form.inverse-form select:disabled::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.25);
+    opacity: 1
+}
+
+form.inverse-form textarea:disabled:-ms-input-placeholder, form.inverse-form input[type="date"]:disabled:-ms-input-placeholder,
+form.inverse-form input[type="datetime"]:disabled:-ms-input-placeholder,
+form.inverse-form input[type="datetime-local"]:disabled:-ms-input-placeholder,
+form.inverse-form input[type="email"]:disabled:-ms-input-placeholder,
+form.inverse-form input[type="month"]:disabled:-ms-input-placeholder,
+form.inverse-form input[type="number"]:disabled:-ms-input-placeholder,
+form.inverse-form input[type="password"]:disabled:-ms-input-placeholder,
+form.inverse-form input[type="search"]:disabled:-ms-input-placeholder,
+form.inverse-form input[type="tel"]:disabled:-ms-input-placeholder,
+form.inverse-form input[type="text"]:disabled:-ms-input-placeholder,
+form.inverse-form input[type="time"]:disabled:-ms-input-placeholder,
+form.inverse-form input[type="url"]:disabled:-ms-input-placeholder,
+form.inverse-form input[type="week"]:disabled:-ms-input-placeholder,
+form.inverse-form select:disabled:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.25);
+    opacity: 1
+}
+
+form.inverse-form textarea:disabled::placeholder, form.inverse-form input[type="date"]:disabled::placeholder,
+form.inverse-form input[type="datetime"]:disabled::placeholder,
+form.inverse-form input[type="datetime-local"]:disabled::placeholder,
+form.inverse-form input[type="email"]:disabled::placeholder, form.inverse-form input[type="month"]:disabled::placeholder,
+form.inverse-form input[type="number"]:disabled::placeholder, form.inverse-form input[type="password"]:disabled::placeholder,
+form.inverse-form input[type="search"]:disabled::placeholder, form.inverse-form input[type="tel"]:disabled::placeholder,
+form.inverse-form input[type="text"]:disabled::placeholder, form.inverse-form input[type="time"]:disabled::placeholder,
+form.inverse-form input[type="url"]:disabled::placeholder, form.inverse-form input[type="week"]:disabled::placeholder,
+form.inverse-form select:disabled::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+    opacity: 1
+}
+
+form.inverse-form textarea:hover, form.inverse-form input[type="date"]:hover,
+form.inverse-form input[type="datetime"]:hover, form.inverse-form input[type="datetime-local"]:hover,
+form.inverse-form input[type="email"]:hover, form.inverse-form input[type="month"]:hover,
+form.inverse-form input[type="number"]:hover, form.inverse-form input[type="password"]:hover,
+form.inverse-form input[type="search"]:hover, form.inverse-form input[type="tel"]:hover,
+form.inverse-form input[type="text"]:hover, form.inverse-form input[type="time"]:hover,
+form.inverse-form input[type="url"]:hover, form.inverse-form input[type="week"]:hover,
+form.inverse-form select:hover {
+    border-color: #fff
+}
+
+form.inverse-form textarea:focus, form.inverse-form input[type="date"]:focus,
+form.inverse-form input[type="datetime"]:focus, form.inverse-form input[type="datetime-local"]:focus,
+form.inverse-form input[type="email"]:focus, form.inverse-form input[type="month"]:focus,
+form.inverse-form input[type="number"]:focus, form.inverse-form input[type="password"]:focus,
+form.inverse-form input[type="search"]:focus, form.inverse-form input[type="tel"]:focus,
+form.inverse-form input[type="text"]:focus, form.inverse-form input[type="time"]:focus,
+form.inverse-form input[type="url"]:focus, form.inverse-form input[type="week"]:focus,
+form.inverse-form select:focus {
+    border-color: #98d8f4;
+    box-shadow: 0 0 0 1px #98d8f4
+}
+
+form.inverse-form select {
+    background-position: top -335px left 7px; /*!rtl:remove:start*/
+    background-position: top -335px right 0px; /*!rtl:remove:end*/
+}
+
+form.inverse-form select, form.inverse-form select:disabled {
+    border-color: rgba(255, 255, 255, 0.25)
+}
+
+form.inverse-form input[type=radio] + label, form.inverse-form input[type=checkbox] + label {
+    color: #fff
+}
+
+form.inverse-form input[type=radio] + label:before, form.inverse-form input[type=checkbox] + label:before {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.7) inset
+}
+
+form.inverse-form input[type=radio]:hover + label:before, form.inverse-form input[type=checkbox]:hover + label:before {
+    box-shadow: 0 0 0 1px #fff inset
+}
+
+form.inverse-form input[type=radio]:checked + label:before, form.inverse-form input[type=checkbox]:checked + label:before {
+    box-shadow: 0 0 0 11px #98d8f4 inset
+}
+
+form.inverse-form input[type=radio]:checked + label:after, form.inverse-form input[type=checkbox]:checked + label:after {
+    background-position: 0 -366px
+}
+
+form.inverse-form input[type=radio]:focus + label:before, form.inverse-form input[type=checkbox]:focus + label:before {
+    box-shadow: 0 0 0 1px #98d8f4, 0 0 0 1px #fff inset
+}
+
+form.inverse-form input[type=radio]:focus:checked + label:before,
+form.inverse-form input[type=checkbox]:focus:checked + label:before {
+    box-shadow: 0 0 0 1px #98d8f4, 0 0 0 11px #98d8f4 inset
+}
+
+form.inverse-form input[type=radio]:disabled:checked + label:before,
+form.inverse-form input[type=checkbox]:disabled:checked + label:before {
+    box-shadow: 0 0 0 11px #98d8f4 inset
+}
+
+form.inverse-form input[type=radio]:disabled:checked + label:after,
+form.inverse-form input[type=checkbox]:disabled:checked + label:after {
+    background-position: 0 -366px
+}
+
+form.inverse-form input[type=radio]:checked + label:before {
+    box-shadow: 0 0 0 6px #98d8f4 inset, 0 0 0 11px rgba(0, 0, 0, 0.6) inset, 0 0 0 11px #98d8f4 inset
+}
+
+form.inverse-form input[type=radio]:focus:checked + label:before {
+    box-shadow: 0 0 0 1px #98d8f4, 0 0 0 6px #98d8f4 inset, 0 0 0 11px rgba(0, 0, 0, 0.6) inset, 0 0 0 11px #98d8f4 inset
+}
+
+form.inverse-form input[type=radio]:disabled:checked + label:before {
+    box-shadow: 0 0 0 6px #98d8f4 inset, 0 0 0 11px rgba(0, 0, 0, 0.6) inset, 0 0 0 11px #98d8f4 inset
+}
+
+form.inverse-form input[type=radio].small-input:checked + label:before {
+    box-shadow: 0 0 0 5px #98d8f4 inset, 0 0 0 11px rgba(0, 0, 0, 0.6) inset, 0 0 0 11px #98d8f4 inset
+}
+
+form.inverse-form input[type=radio].small-input:checked + label:after {
+    border-width: 5px
+}
+
+form.inverse-form input[type=radio].small-input:focus:checked + label:before {
+    box-shadow: 0 0 0 1px #98d8f4, 0 0 0 5px #98d8f4 inset, 0 0 0 11px rgba(0, 0, 0, 0.6) inset, 0 0 0 11px #98d8f4 inset
+}
+
+form.inverse-form input[type=radio].small-input:disabled:checked + label:before {
+    box-shadow: 0 0 0 5px #98d8f4 inset, 0 0 0 11px rgba(0, 0, 0, 0.6) inset, 0 0 0 11px #98d8f4 inset
+}
+
+form.simple-form input[type="date"], form.simple-form input[type="datetime"],
+form.simple-form input[type="datetime-local"], form.simple-form input[type="email"],
+form.simple-form input[type="month"], form.simple-form input[type="number"],
+form.simple-form input[type="password"], form.simple-form input[type="search"],
+form.simple-form input[type="tel"], form.simple-form input[type="text"],
+form.simple-form input[type="time"], form.simple-form input[type="url"],
+form.simple-form input[type="week"], form.simple-form select {
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0
+}
+
+form.simple-form input[type="date"], form.simple-form input[type="date"]:hover,
+form.simple-form input[type="date"]:focus, form.simple-form input[type="date"]:disabled,
+form.simple-form input[type="datetime"], form.simple-form input[type="datetime"]:hover,
+form.simple-form input[type="datetime"]:focus, form.simple-form input[type="datetime"]:disabled,
+form.simple-form input[type="datetime-local"], form.simple-form input[type="datetime-local"]:hover,
+form.simple-form input[type="datetime-local"]:focus, form.simple-form input[type="datetime-local"]:disabled,
+form.simple-form input[type="email"], form.simple-form input[type="email"]:hover,
+form.simple-form input[type="email"]:focus, form.simple-form input[type="email"]:disabled,
+form.simple-form input[type="month"], form.simple-form input[type="month"]:hover,
+form.simple-form input[type="month"]:focus, form.simple-form input[type="month"]:disabled,
+form.simple-form input[type="number"], form.simple-form input[type="number"]:hover,
+form.simple-form input[type="number"]:focus, form.simple-form input[type="number"]:disabled,
+form.simple-form input[type="password"], form.simple-form input[type="password"]:hover,
+form.simple-form input[type="password"]:focus, form.simple-form input[type="password"]:disabled,
+form.simple-form input[type="search"], form.simple-form input[type="search"]:hover,
+form.simple-form input[type="search"]:focus, form.simple-form input[type="search"]:disabled,
+form.simple-form input[type="tel"], form.simple-form input[type="tel"]:hover,
+form.simple-form input[type="tel"]:focus, form.simple-form input[type="tel"]:disabled,
+form.simple-form input[type="text"], form.simple-form input[type="text"]:hover,
+form.simple-form input[type="text"]:focus, form.simple-form input[type="text"]:disabled,
+form.simple-form input[type="time"], form.simple-form input[type="time"]:hover,
+form.simple-form input[type="time"]:focus, form.simple-form input[type="time"]:disabled,
+form.simple-form input[type="url"], form.simple-form input[type="url"]:hover,
+form.simple-form input[type="url"]:focus, form.simple-form input[type="url"]:disabled,
+form.simple-form input[type="week"], form.simple-form input[type="week"]:hover,
+form.simple-form input[type="week"]:focus, form.simple-form input[type="week"]:disabled,
+form.simple-form select, form.simple-form select:hover, form.simple-form select:focus,
+form.simple-form select:disabled {
+    border-width: 0 0 1px
+}
+
+form.simple-form input[type="date"]:focus, form.simple-form input[type="datetime"]:focus,
+form.simple-form input[type="datetime-local"]:focus, form.simple-form input[type="email"]:focus,
+form.simple-form input[type="month"]:focus, form.simple-form input[type="number"]:focus,
+form.simple-form input[type="password"]:focus, form.simple-form input[type="search"]:focus,
+form.simple-form input[type="tel"]:focus, form.simple-form input[type="text"]:focus,
+form.simple-form input[type="time"]:focus, form.simple-form input[type="url"]:focus,
+form.simple-form input[type="week"]:focus, form.simple-form select:focus {
+    box-shadow: 0 1px 0 0 #0073b1
+}
+
+form.simple-form select {
+    padding-right: 32px
+}
+
+form.simple-form .floating-label {
+    position: relative;
+    display: block;
+    margin-top: 35px
+}
+
+form.simple-form .floating-label .label-text {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    transition: all 0.35s ease;
+    margin: 0
+}
+
+form.simple-form .floating-label[data-form-elem-focus=true] .label-text {
+    transform: translate(0, -25px);
+    -webkit-transform: translate(0, -25px)
+}
+
+form.simple-form.inverse-form input[type="date"]:focus, form.simple-form.inverse-form input[type="datetime"]:focus,
+form.simple-form.inverse-form input[type="datetime-local"]:focus,
+form.simple-form.inverse-form input[type="email"]:focus, form.simple-form.inverse-form input[type="month"]:focus,
+form.simple-form.inverse-form input[type="number"]:focus, form.simple-form.inverse-form input[type="password"]:focus,
+form.simple-form.inverse-form input[type="search"]:focus, form.simple-form.inverse-form input[type="tel"]:focus,
+form.simple-form.inverse-form input[type="text"]:focus, form.simple-form.inverse-form input[type="time"]:focus,
+form.simple-form.inverse-form input[type="url"]:focus, form.simple-form.inverse-form input[type="week"]:focus,
+form.simple-form.inverse-form select:focus {
+    box-shadow: 0 1px 0 0 #98d8f4
+}
+
+@media screen and (-ms-high-contrast: active) {
+    input[type=checkbox]:checked + label:after {
+        content: "\2714";
+        font-size: 18px;
+        top: -3px;
+        left: 0;
+        background: transparent
+    }
+
+    input[type=checkbox]:checked.small-input + label:after {
+        font-size: 16px;
+        left: -1px
+    }
+
+    input[type=radio]:checked + label:after {
+        border: 7px solid currentColor;
+        border-radius: 50%;
+        width: 22px;
+        height: 22px
+    }
+
+    input[type=radio]:checked.small-input + label:after {
+        width: 18px;
+        height: 18px
+    }
+}
+
+artdeco-floatlabel {
+    position: relative;
+    display: block;
+    margin-top: 35px
+}
+
+artdeco-floatlabel input[type="date"], artdeco-floatlabel input[type="datetime"],
+artdeco-floatlabel input[type="datetime-local"], artdeco-floatlabel input[type="email"],
+artdeco-floatlabel input[type="month"], artdeco-floatlabel input[type="number"],
+artdeco-floatlabel input[type="password"], artdeco-floatlabel input[type="search"],
+artdeco-floatlabel input[type="tel"], artdeco-floatlabel input[type="text"],
+artdeco-floatlabel input[type="time"], artdeco-floatlabel input[type="url"],
+artdeco-floatlabel input[type="week"] {
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0
+}
+
+artdeco-floatlabel input[type="date"], artdeco-floatlabel input[type="date"]:hover,
+artdeco-floatlabel input[type="date"]:focus, artdeco-floatlabel input[type="date"]:disabled,
+artdeco-floatlabel input[type="datetime"], artdeco-floatlabel input[type="datetime"]:hover,
+artdeco-floatlabel input[type="datetime"]:focus, artdeco-floatlabel input[type="datetime"]:disabled,
+artdeco-floatlabel input[type="datetime-local"], artdeco-floatlabel input[type="datetime-local"]:hover,
+artdeco-floatlabel input[type="datetime-local"]:focus, artdeco-floatlabel input[type="datetime-local"]:disabled,
+artdeco-floatlabel input[type="email"], artdeco-floatlabel input[type="email"]:hover,
+artdeco-floatlabel input[type="email"]:focus, artdeco-floatlabel input[type="email"]:disabled,
+artdeco-floatlabel input[type="month"], artdeco-floatlabel input[type="month"]:hover,
+artdeco-floatlabel input[type="month"]:focus, artdeco-floatlabel input[type="month"]:disabled,
+artdeco-floatlabel input[type="number"], artdeco-floatlabel input[type="number"]:hover,
+artdeco-floatlabel input[type="number"]:focus, artdeco-floatlabel input[type="number"]:disabled,
+artdeco-floatlabel input[type="password"], artdeco-floatlabel input[type="password"]:hover,
+artdeco-floatlabel input[type="password"]:focus, artdeco-floatlabel input[type="password"]:disabled,
+artdeco-floatlabel input[type="search"], artdeco-floatlabel input[type="search"]:hover,
+artdeco-floatlabel input[type="search"]:focus, artdeco-floatlabel input[type="search"]:disabled,
+artdeco-floatlabel input[type="tel"], artdeco-floatlabel input[type="tel"]:hover,
+artdeco-floatlabel input[type="tel"]:focus, artdeco-floatlabel input[type="tel"]:disabled,
+artdeco-floatlabel input[type="text"], artdeco-floatlabel input[type="text"]:hover,
+artdeco-floatlabel input[type="text"]:focus, artdeco-floatlabel input[type="text"]:disabled,
+artdeco-floatlabel input[type="time"], artdeco-floatlabel input[type="time"]:hover,
+artdeco-floatlabel input[type="time"]:focus, artdeco-floatlabel input[type="time"]:disabled,
+artdeco-floatlabel input[type="url"], artdeco-floatlabel input[type="url"]:hover,
+artdeco-floatlabel input[type="url"]:focus, artdeco-floatlabel input[type="url"]:disabled,
+artdeco-floatlabel input[type="week"], artdeco-floatlabel input[type="week"]:hover,
+artdeco-floatlabel input[type="week"]:focus, artdeco-floatlabel input[type="week"]:disabled {
+    border-width: 0 0 1px;
+    outline: 0
+}
+
+artdeco-floatlabel input[type="date"]:focus, artdeco-floatlabel input[type="datetime"]:focus,
+artdeco-floatlabel input[type="datetime-local"]:focus, artdeco-floatlabel input[type="email"]:focus,
+artdeco-floatlabel input[type="month"]:focus, artdeco-floatlabel input[type="number"]:focus,
+artdeco-floatlabel input[type="password"]:focus, artdeco-floatlabel input[type="search"]:focus,
+artdeco-floatlabel input[type="tel"]:focus, artdeco-floatlabel input[type="text"]:focus,
+artdeco-floatlabel input[type="time"]:focus, artdeco-floatlabel input[type="url"]:focus,
+artdeco-floatlabel input[type="week"]:focus {
+    box-shadow: 0 1px 0 0 #0084bf
+}
+
+artdeco-floatlabel select {
+    padding-right: 32px
+}
+
+artdeco-floatlabel .artdeco-label-text {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    transition: all 0.35s ease;
+    margin: 0
+}
+
+artdeco-floatlabel[data-form-elem-focus=true] .artdeco-label-text {
+    transform: translate(0, -25px);
+    -webkit-transform: translate(0, -25px)
+}
+
+body {
+    background: none
+}
+
+#layout-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+img.lazy-load {
+    opacity: 0
+}
+
+img.lazy-loaded {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out
+}
+
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 52px;
+    background: #283E4A;
+    z-index: 2
+}
+
+.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    position: relative
+}
+
+.main:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(54, 67, 73, 0.9);
+    z-index: 1
+}
+
+.flip-card {
+    position: relative;
+    z-index: 2;
+    width: 352px;
+    max-width: 352px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-duration: 667ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d
+}
+
+.flip-card.show-login {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+
+.login-form, .join-form {
+    z-index: 2;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotateY(0deg);
+    transform: translateY(-50%) rotateY(0deg);
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 352px;
+    max-width: 352px;
+    padding: 0 16px 16px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 16px
+}
+
+.login-form {
+    -webkit-transform: translateY(-50%) rotateY(180deg);
+    transform: translateY(-50%) rotateY(180deg)
+}
+
+.form-title {
+    width: 352px;
+    max-width: 352px;
+    padding: 16px;
+    margin: 0 0 16px -16px;
+    box-sizing: border-box;
+    background: #f7f8fa;
+    font-family: /* Roman */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 19px;
+    text-align: center
+}
+
+.form-subtitle {
+    margin-bottom: 12px;
+    font-family: /* Roman */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI;
+    line-height: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 13px;
+    text-align: center
+}
+
+input[type="text"], input[type="password"] {
+    background: #fff;
+    margin-bottom: 8px;
+    height: 40px
+}
+
+input[type="text"]:last-of-type, input[type="password"]:last-of-type {
+    margin-bottom: 12px
+}
+
+input[type="text"].error, input[type="password"].error {
+    border: 1px solid #dd3737
+}
+
+.form-subtext {
+    display: block;
+    font-family: /* Roman */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+    text-align: center
+}
+
+.form-caption {
+    display: block;
+    font-family: /* Roman */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI;
+    line-height: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 13px;
+    text-align: center
+}
+
+.form-caption a, .form-caption a:visited {
+    color: rgba(0, 0, 0, 0.55)
+}
+
+a.form-subtext {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0;
+    color: #0084bf
+}
+
+a.form-subtext:visited {
+    color: #827be9
+}
+
+a.form-subtext:visited:active {
+    color: #665ed0
+}
+
+.artdeco-link-variant a.form-subtext {
+    font-weight: normal;
+    color: #0073b1
+}
+
+.artdeco-link-variant a.form-subtext:visited {
+    color: #827be9
+}
+
+.artdeco-link-variant a.form-subtext:visited:active {
+    color: #665ed0
+}
+
+a.form-subtext:hover, a.form-subtext.hover, a.form-subtext:focus,
+a.form-subtext.focus {
+    text-decoration: underline
+}
+
+a.form-subtext:focus, a.form-subtext.focus {
+    text-decoration: underline
+}
+
+a.form-subtext:active, a.form-subtext.active {
+    text-decoration: none;
+    color: #006097
+}
+
+.artdeco-link-variant a.form-subtext:active, .artdeco-link-variant a.form-subtext.active {
+    color: #004b7c
+}
+
+input[type="submit"] {
+    background-color: #0084bf;
+    border: 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: inherit;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    outline-width: 2px;
+    padding: 0 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 167ms;
+    transition-property: background-color, box-shadow, color;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    vertical-align: middle;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 40px
+}
+
+input[type="submit"] > svg, input[type="submit"] li-icon {
+    top: 2px;
+    box-sizing: content-box;
+    height: 16px;
+    left: 0;
+    margin: -12px 0 0 -6px;
+    padding: 0 6px 0 0;
+    position: relative;
+    width: 16px
+}
+
+input[type="submit"] > svg, input[type="submit"] li-icon > svg {
+    transition: -webkit-transform 167ms;
+    transition: transform 167ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1)
+}
+
+input[type="submit"] li-icon > svg {
+    display: inline-block;
+    vertical-align: top
+}
+
+input[type="submit"]:after {
+    border-color: #006097;
+    padding: calc(50% + 22px);
+    background-color: transparent;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: .5vw;
+    content: "";
+    height: 0;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition-property: padding, border-width;
+    transition-duration: 334ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    width: 0;
+    z-index: -1
+}
+
+.edge input[type="submit"]:after, .ie input[type="submit"]:after {
+    padding: 100%
+}
+
+.edge input[type="submit"], .ie input[type="submit"] {
+    border-radius: 0
+}
+
+.artdeco-button-variant input[type="submit"] {
+    font-weight: normal;
+    background-color: #0073b1
+}
+
+.artdeco-button-variant input[type="submit"]:after {
+    border-color: #004b7c;
+    padding: calc(50% + 22px)
+}
+
+.edge .artdeco-button-variant input[type="submit"]:after, .ie .artdeco-button-variant input[type="submit"]:after {
+    padding: 100%
+}
+
+input[type="submit"]:not(:disabled)[data-is-animating-click=true],
+input[type="submit"]:hover:not(:disabled)[data-is-animating-click=true] {
+    color: #fff;
+    transition-duration: 140ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1)
+}
+
+input[type="submit"]:not(:disabled)[data-is-animating-click=true]:after,
+input[type="submit"]:hover:not(:disabled)[data-is-animating-click=true]:after {
+    border-width: 50vw;
+    padding: 0;
+    transition-duration: 140ms
+}
+
+input[type="submit"]:hover:not(:disabled), input[type="submit"].hover-not-disabled {
+    background-color: #0073b1;
+    color: #fff
+}
+
+.artdeco-button-variant input[type="submit"]:hover:not(:disabled),
+.artdeco-button-variant input[type="submit"].hover-not-disabled {
+    background-color: #006097
+}
+
+input[type="submit"]:disabled, input[type="submit"].disabled {
+    color: rgba(255, 255, 255, 0.7);
+    opacity: .25;
+    cursor: not-allowed
+}
+
+label {
+    margin: 0 0 4px
+}
+
+.error-message {
+    font-family: /* Roman */
+    Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */
+    Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */
+    Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */
+    Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */
+    Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */
+    Heiti SC, Microsoft Yahei, Segoe UI;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+    color: #dd3737;
+    text-align: center;
+    margin-bottom: 8px
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(15px);
+}
+
+
+@media (max-width: 769px) {
+    .main {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding: 0 12px
+    }
+
+    .flip-card {
+        width: 100%
+    }
+
+    .login-form, .join-form {
+        background: none;
+        padding: 0;
+        box-shadow: none;
+        width: 100%;
+        top: 0;
+        -webkit-transform: translateY(0) rotateY(0deg);
+        transform: translateY(0) rotateY(0deg)
+    }
+
+    .login-form {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg)
+    }
+
+    .form-title {
+        width: 100%;
+        background: none;
+        margin-left: 0
+    }
+
+    label {
+        display: none
+    }
+
+    .form-title, .form-subtitle, .form-subtext, .form-caption, a.form-subtext,
+    a.form-subtext:visited {
+        color: #fff
+    }
+
+    .form-title a, .form-title a:visited, .form-subtitle a, .form-subtitle a:visited,
+    .form-subtext a, .form-subtext a:visited, .form-caption a, .form-caption a:visited,
+    a.form-subtext a, a.form-subtext a:visited, a.form-subtext:visited a,
+    a.form-subtext:visited a:visited {
+        color: #fff
+    }
+
+    input[type="text"], input[type="password"] {
+        margin-bottom: 0;
+        height: 45px
+    }
+
+    input[type="submit"] {
+        margin-top: 8px
+    }
+
+    #captcha-dialog {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        margin-top: -205px;
+        z-index: 5
+    }
+
+    #captcha-dialog iframe {
+        width: 100%;
+        height: 410px
+    }
+}
+
+.login-form__label {
+    display: none
+}
+
+.link-forgot-password {
+    margin: 8px auto 12px
+}
+
+input[type="password"].login-password {
+    margin-bottom: 0
+}
+
+@media (max-width: 769px) {
+    .link-forgot-password {
+        margin: 12px auto 16px
+    }
+}
+
+.agreement {
+    margin-bottom: 8px
+}
+
+.login {
+    margin-top: 12px
+}
+
+input.join-input::-webkit-input-placeholder {
+    opacity: 0
+}
+
+input.join-input::-moz-placeholder {
+    opacity: 0
+}
+
+input.join-input:-moz-placeholder {
+    opacity: 0
+}
+
+input.join-input:-ms-input-placeholder {
+    opacity: 0
+}
+
+@media (max-width: 769px) {
+    .agreement {
+        margin: 8px 0 12px
+    }
+
+    input.join-input::-webkit-input-placeholder {
+        opacity: 1
+    }
+
+    input.join-input:-moz-placeholder {
+        opacity: 1
+    }
+
+    input.join-input::-moz-placeholder {
+        opacity: 1
+    }
+
+    input.join-input:-ms-input-placeholder {
+        opacity: 1
+    }
+}
+

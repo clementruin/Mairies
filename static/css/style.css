@@ -1,0 +1,11 @@
+.fixed {
+	height : 50px;
+}
+
+th {
+	border:1px black solid;
+}
+
+.follow {
+	position: relative;
+}
