@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="{{url_for('static', filename='bootstrap.min.css')}}">
+	<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+	<title>Mantic Data | Maires de France </title>
+</head>
+
+<body>
+
+	<br>
+	<h2>LES MAIRES DE FRANCE</h2>
+	<br>
+	<br>
+	<br>
+
+	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for a city..." title="Type in a name">
+	
+	<div class = "scrollit">
+	<table id="myTable">
+	  <tr class="header">
+	    <th style="width:40%;">Commune</th>
+	    <th style="width:10%;">Code postal</th>
+	    <th style="width:40%;">Nom du maire</th>
+	    <th style="width:10%;">Parti politique</th>
+	  </tr>
+	  <tbody>
+	  	{% for maires in base %}
+		  <tr>
+		    <td>{{maires.city}}</td>
+		    <td>{{maires.postal_code}}</td>
+		    <td>{{maires.first_name}} {{maires.last_name}}</td>
+		    <td>{{maires.party}}</td>
+		  </tr>
+		{% endfor %}
+		</tbody>
+	</table>
+	</div>
+
+	<script>
+	function myFunction() {
+	  var input, filter, table, tr, td, i;
+	  input = document.getElementById("myInput");
+	  filter = input.value.toUpperCase();
+	  table = document.getElementById("myTable");
+	  tr = table.getElementsByTagName("tr");
+	  for (i = 0; i < tr.length; i++) {
+	    td = tr[i].getElementsByTagName("td")[0];
+	    if (td) {
+	      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+	        tr[i].style.display = "";
+	      } else {
+	        tr[i].style.display = "none";
+	      }
+	    }       
+	  }
+	}
+	</script>
+</body>
+</html>

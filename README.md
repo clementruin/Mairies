@@ -11,10 +11,18 @@ Lancer mairies_V2.py : création de la base de données des maires de France
 1. Dans le terminal, écrire : python3 mairies_V2
 2. Output : le fichier database.csv et son homologue database.db sont mis à jour, et disponibles dans le folder static 
 
-Lancer app.py : lance l'application Flask pour afficher la base sur un serveur local
-1. Dans le terminal, écrire : python3 app.py
+2 solutions pour afficher la base : une jolie et une un peu plus complète
+
+Pour la jolie :
+Lancer web.py : lance l'application Flask pour afficher la base sur un serveur local
+1. Dans le terminal, écrire : python3 web.py
 2. Output : une url s'affiche
 3. Copier/coller l'url dans votre navigateur internet
+
+Pour la complète :
+idem avec app.py
+
+
 
 ### Important
 - La base est grande, mais vous pouvez tester sur une base restreinte au département 01. Par défaut, le programme proposé ne construit la base que pour ce département. Si vous voulez tester pour la France entière, reprenez la section "Lancer le code" en remplaçant :
@@ -61,8 +69,10 @@ Lancer app.py : lance l'application Flask pour afficher la base sur un serveur l
 
 2. Fichier app.py : lance l'application Flask pour afficher la base sur un serveur local
 
+3. Fichier web.py : idem avec un style CSS plus avancé (static/main.css)
+
 
 
 ### Notes
 - Séparation des programmes de création et d'affichage de la base plus pratique pour le stockage de la base et pour travailler de manière séparée sur ces deux parties 
-- Le scraping des 3 premiers résultats Google par reconnaissace du parti dans un large texte vient en complément de Wikipédia, car cette méthode est encore longue et couteuse à ce stade de développement.
+- Le scraping des 3 premiers résultats Google par reconnaissace du parti dans un large texte vient en complément de Wikipédia, car cette méthode est encore longue et couteuse à ce stade de développement. Le programme proposé ne fonctionne qu'avec du scraping, sans prédiction de parti... 

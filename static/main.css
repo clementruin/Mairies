@@ -1,0 +1,69 @@
+h2 { color: #c9d0d4; font-family: 'Helvetica Neue', sans-serif; font-size: 46px; font-weight: 100; line-height: 50px; letter-spacing: 1px; padding: 0 0 40px; border-bottom: double #555; }
+
+body {
+
+	background-image: url('mairie2.jpg'); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+
+}
+
+#myTable {
+	margin: auto;	
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 80%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  background-color: #EFEFEF;
+  opacity: 0.5;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 80%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+  }
+
+#myTable td {
+	background-color: #EFEFEF;
+  	opacity: 0.5;
+}
+
+#myTable tr.header {
+	background-color: #EFEFEF;
+	opacity:0.9;
+	
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr:hover {
+  background-color: #EFEFEF;
+  opacity: 0.9;
+  font-weight: bold;
+}
+
+.scrollit {
+	overflow: scroll;
+	height:80vh;
+}
