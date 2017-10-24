@@ -35,6 +35,8 @@ Lancer app.py : lance l'application Flask pour afficher la base sur un serveur l
 
 	0.2. Base code_postaux_insee.csv utilisée par La Poste (correspondance code commune avec code postal et coordonnées géographiques)
 
+	0.3 Installer les bibliothèques re, requests, BeautifulSoup4, csv, unidecode ET fuzzywuzzy
+
 1. Fichier mairies_V2.py : création de la base de données 
 
 	1.1. Définition de la base
