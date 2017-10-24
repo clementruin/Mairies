@@ -76,3 +76,4 @@ idem avec app.py
 ### Notes
 - Séparation des programmes de création et d'affichage de la base plus pratique pour le stockage de la base et pour travailler de manière séparée sur ces deux parties 
 - Le scraping des 3 premiers résultats Google par reconnaissace du parti dans un large texte vient en complément de Wikipédia, car cette méthode est encore longue et couteuse à ce stade de développement. Le programme proposé ne fonctionne qu'avec du scraping, sans prédiction de parti... 
+- On a essayé de scraper LeMonde.fr, mais on s'est fait traité de "bot" par Google
