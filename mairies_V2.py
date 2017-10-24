@@ -11,7 +11,7 @@ import unidecode
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 
-engine = create_engine('sqlite:///static/database.db', echo=False)
+engine = create_engine('sqlite:///static/database_01.db', echo=False)
 Base = declarative_base()
 Session = sessionmaker(bind=engine)
 session = Session()
@@ -67,7 +67,7 @@ def no_accent(string):
 
 
 def build_db():
-    outfile = open('static/insee.csv', 'r')
+    outfile = open('static/insee_01.csv', 'r')
     reader = csv.DictReader(outfile, delimiter=';')
     for line in reader:
         get = get_dict(line["codeinsee"])
@@ -77,7 +77,6 @@ def build_db():
             line["prepsn"],
             line["nompsn"])
         print(line["codeinsee"])
-        #print(scrap)
         new_mayor = Mairies(
             insee_code=line["codeinsee"],
             postal_code=get[0],
@@ -95,7 +94,7 @@ def build_db():
 
 
 def write_csv():
-    outfile = open('static/database.csv', 'w')
+    outfile = open('static/database_01.csv', 'w')
     outcsv = csv.writer(outfile)
     outcsv.writerow(['insee_code',
                      'postal_code',
@@ -121,13 +120,6 @@ def scrap_party_date(postal_code, city, first_name, last_name):
             'wikipedia', city, postal_code)
         r = requests.get(url)
         soup = BeautifulSoup(r.text, "html.parser")
-
-        #head3 = soup.find_all("h3", class_="r", limit=1)
-        #link = head3[0].a['href']
-        #link = link.split('=')[1].split('&')[0]
-        #pattern = re.compile(r'Liste des maires successifs')
-        #caption = soup.find('caption', text=pattern).parent
-        #table = caption.parent
 
         tag = soup.find_all("div", class_="kv", limit=1)
         link = tag[0].cite.text
@@ -164,6 +156,5 @@ def scrap_party_date(postal_code, city, first_name, last_name):
 
 Base.metadata.create_all(engine)
 
-#print(scrap_party_date('01182','Groslée','Marthe','AUREL'))
 build_db()
 write_csv()

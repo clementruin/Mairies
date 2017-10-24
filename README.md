@@ -7,7 +7,7 @@ Base de données sur les mairies de France
 
 Enter dans le bon directory d'abord
 
-Lancer mairies_V2.py : création de la base de données 
+Lancer mairies_V2.py : création de la base de données des maires de France
 1. Dans le terminal, écrire : python3 mairies_V2
 2. Output : le fichier database.csv et son homologue database.db sont mis à jour, et disponibles dans le folder static 
 
@@ -22,6 +22,8 @@ Lancer app.py : lance l'application Flask pour afficher la base sur un serveur l
 		- insee_01.csv PAR insee.csv (ligne 70 mairies_V2.py)
 
 		- dpt01_db.csv PAR database.csv (ligne 98 mairies_V2.py ET ligne 36 index_mairies.html)
+
+		- database_01.db PAR database.db (ligne 14 et 97 mairies_V2.py)
 
 - La base de donnée est déja construite et disponible dans le folder static, vous pouvez l'afficher direcetment par le programme app.py 
 
