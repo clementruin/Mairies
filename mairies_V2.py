@@ -67,7 +67,7 @@ def no_accent(string):
 
 
 def build_db():
-    outfile = open('static/insee_01.csv', 'r')
+    outfile = open('static/insee.csv', 'r')
     reader = csv.DictReader(outfile, delimiter=';')
     for line in reader:
         get = get_dict(line["codeinsee"])
@@ -95,7 +95,7 @@ def build_db():
 
 
 def write_csv():
-    outfile = open('static/dpt01_db.csv', 'w')
+    outfile = open('static/database.csv', 'w')
     outcsv = csv.writer(outfile)
     outcsv.writerow(['insee_code',
                      'postal_code',
