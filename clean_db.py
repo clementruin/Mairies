@@ -123,15 +123,15 @@ def scrap_party(insee_code, city):
         return "NA"
 
 
-"""
+
 ## correction pour les communes sans parti
-rows = session.query(Mairies).filter(Mairies.party == "NA").filter(Mairies.population<5000).filter(Mairies.population>2500).all()
+rows = session.query(Mairies).filter(Mairies.party == "NA").filter(Mairies.population<1200).filter(Mairies.population>1100).all()
 for row in rows :
-	#row.party = clean_party_attribute(scrap_party(row.insee_code, row.city))
+	row.party = clean_party_attribute(scrap_party(row.insee_code, row.city))
 	print(row.city, row.party, row.population)
 print(len(rows))
 session.commit()
-"""
+
 
 """
 row = session.query(Mairies).filter(Mairies.city == "Paris").all()
