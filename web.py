@@ -21,7 +21,7 @@ class Mairies(db.Model):
 
 @app.route('/')
 def accueil():
-    base = Mairies.query.all()
+    base = Mairies.query.filter(Mairies.population>100000).all()
     return render_template('home.html', base=base)
 
 if __name__ == '__main__':
