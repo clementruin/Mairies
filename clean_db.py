@@ -16,7 +16,7 @@ from fuzzywuzzy import process
 class Mairies():
 	pass
 
-engine = create_engine('sqlite:///static/database_01.db', echo=False)
+engine = create_engine('sqlite:///static/database.db', echo=False)
 metadata = MetaData(engine)
 mairies = Table('mairies', metadata, autoload=True)
 mapper(Mairies, mairies)
@@ -79,15 +79,8 @@ def clean_party_attribute(string):
 		return L[-1]
 
 
-rows = session.query(Mairies).all()
-for row in rows :
-	row.party = clean_party_attribute(row.party)
-	print(row.party)
-session.commit() 
-
-
 def write_csv():
-    outfile = open('static/database_01.csv', 'w')
+    outfile = open('static/database.csv', 'w')
     outcsv = csv.writer(outfile)
     outcsv.writerow(['insee_code',
                      'postal_code',
@@ -106,7 +99,48 @@ def write_csv():
                       for column in mairies.c]) for curr in records]
     outfile.close()
 
+def scrap_party(insee_code, city):
+	try :
+		r = requests.get("https://www.google.fr/search?q={}+{}+{}+{}".format('le', 'monde', city, insee_code))
+		soup = BeautifulSoup(r.text, "html.parser")
+		head3 = soup.find_all("h3", class_="r", limit=1)
+		link = head3[0].a['href']
+		link = link.split('=')[1].split('&')[0]
+		link = link.split(insee_code)[0]+insee_code
+
+		r = requests.get(link)
+		soup = BeautifulSoup(r.text, "lxml")
+		div = soup.find_all("div", class_="elu-principal")
+		party = div[0].ul.li.br.next_sibling
+		return party
+	except :
+		return "NA"
+
+"""
+## correction pour les communes sans parti
+rows = session.query(Mairies).filter(Mairies.party == "NA").filter(Mairies.population<5000).filter(Mairies.population>2500).all()
+for row in rows :
+	#row.party = clean_party_attribute(scrap_party(row.insee_code, row.city))
+	print(row.city, row.party, row.population)
+print(len(rows))
+session.commit() 
+"""
+
+"""
+row = session.query(Mairies).filter(Mairies.city=="Paris").all()
+row[0].party = "PS"
+row[0].first_mandate_date = "2014"
+session.commit()
+"""
+
+"""
+## Nettoie les parties après avoir génerer la base brute avec mairies.py
+rows = session.query(Mairies).all()
+for row in rows :
+	row.party = clean_party_attribute(row.party)
+	print(row.party)
+session.commit() 
+"""
 
 write_csv()
-#arbitrage, reecriture base 01!, puis Pandas .. 
 

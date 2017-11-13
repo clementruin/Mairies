@@ -11,7 +11,7 @@ class Mairies(db.Model):
     insee_code = db.Column( "insee_code", db.Integer, primary_key=True)
     postal_code = db.Column("postal_code", db.Integer)
     city = db.Column("city", db.Unicode)
-    population = db.Column("population", db.Unicode)
+    population = db.Column("population", db.Integer)
     first_name = db.Column("first_name", db.Unicode)
     last_name = db.Column("last_name", db.Unicode)
     party = db.Column("party", db.Unicode)

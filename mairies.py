@@ -158,6 +158,5 @@ def scrap_party_date(postal_code, city, first_name, last_name):
 
 
 Base.metadata.create_all(engine)
-
-build_db()
-write_csv()
+#build_db()
+#write_csv()

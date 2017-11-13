@@ -68,17 +68,35 @@ def city_map():
 	plt.show()
 
 
-## population 
-#print(df["population"].dtypes)
-#print(df["population"][df["population"]>5])
-#print(df["population"].describe())
-
-
-def pop_per_party():
+def pop_per_party(range):
 	# population under each party
-	#df["population","party"].groupby('party')
-	#print(df.loc[:,['population','party']])
-	print(df.loc[:,['population','party']].groupby('party').sum().sort_values("population"))
+	pop = df.loc[:,['population','party','city']]
+	pop = pop[pop.population >= range[0]][pop.population <= range[1]].groupby("party").sum().sort_values("population")
+	total_pop = pop['population'].sum()
+	pop["percentage"] = pop["population"].apply(lambda x: x/total_pop*100)
+	print(pop)
 
-city_map()
-#pop_per_party()
+def party_vs_citysize(df):
+	Sizes = [0,200, 600, 1000, 5000, 10000, 30000, 70000, 100000, 300000, 1000000]
+	Parties = ["UMP-LR","PS", "DVD", "DVG", "SE"]
+	n = len(Sizes)
+	A = []
+	df_pop = df.loc[:,['population','party']]
+	for s in Sizes:
+		L = []
+		total_pop = df_pop['population'][df_pop.population >= s].sum()
+		for p in Parties:
+			n_pop = df_pop[df_pop.population >= s][df_pop.party==p]
+			n_pop = n_pop['population'].sum()/total_pop*100
+			L.append(n_pop)
+		A.append(L)
+	df = pd.DataFrame(A, index=Sizes, columns=Parties)
+	df.plot.bar()
+	plt.show()
+
+
+#----- main -----#
+population_threshold = [0,1000000]
+#city_map()
+pop_per_party(population_threshold)
+#party_vs_citysize(df)
